@@ -1,0 +1,343 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya|Montserrat|Playfair+Display';
+@font-face {
+  font-family: 'Scriptina';
+  src: url("../../fonts/scriptin-webfont.woff2") format("woff2"), url("../../fonts/scriptin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Montserrat'; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+p, .pancakes .ready-in h3 {
+  line-height: 1.7; }
+
+h1 {
+  font-size: 6rem;
+  font-family: 'Playfair Display'; }
+
+h2, h3 {
+  font-family: 'Alegreya'; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3.5rem; }
+
+.art-of-cakes .container, .art-of-cakes .cta-cakes, .sandwich .sandwich-details .sandwich-stats {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+
+nav, nav ul, .art-of-cakes .cake-info .chef-row, .pancakes .pancake-wrapper, .breakfast .container, .sandwich .sandwich-details, footer ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.art-of-cakes .cake-info, .pancakes .pancake-info, .breakfast .container .flair-escape, .sandwich .sandwich-details .sandwich-stats .stats {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  background: url("../../images/hero.jpg") no-repeat center top/cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
+  position: relative; }
+  header h1, header h3, header button {
+    margin: 50px 0; }
+  header button {
+    border: none;
+    background: rgba(70, 71, 70, 0.6);
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    transition: 0.5s all cubic-bezier(0.9, 0.8, 0.6, 0.2);
+    color: #f2f2f2;
+    padding: 10px 25px; }
+    header button:focus {
+      outline: none; }
+    header button:hover {
+      background: rgba(0, 0, 0, 0.6);
+      color: rgba(70, 71, 70, 0.6); }
+  header .bread-bullet {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    background: url("../../images/bread-bullet.jpg") no-repeat center top/cover;
+    background-size: 80%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -2.2em; }
+
+nav {
+  background: rgba(70, 71, 70, 0.6);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  z-index: 2; }
+  @media all and (max-width: 670px) {
+    nav {
+      transition: 300ms all ease-in-out;
+      transform: translateY(-150px);
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap; }
+      nav .home-button {
+        -ms-flex-order: 1;
+        order: 1; } }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    @media all and (max-width: 670px) {
+      nav ul {
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap; } }
+  nav li {
+    margin: 0 15px; }
+  nav a {
+    text-decoration: none;
+    color: #f2f2f2; }
+    nav a.home-button {
+      font-family: 'Scriptina'; }
+
+.art-of-cakes {
+  padding: 100px 0; }
+  .art-of-cakes .container {
+    -ms-flex: 1;
+    flex: 1; }
+    @media all and (max-width: 925px) {
+      .art-of-cakes .container {
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap; } }
+  @media all and (max-width: 925px) {
+    .art-of-cakes .cta-cakes {
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px 0; } }
+  .art-of-cakes .cake-info {
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    padding: 0 25px; }
+    .art-of-cakes .cake-info p, .art-of-cakes .cake-info .pancakes .ready-in h3, .pancakes .ready-in .art-of-cakes .cake-info h3 {
+      text-align: center; }
+    .art-of-cakes .cake-info h3 + p, .art-of-cakes .cake-info .pancakes .ready-in h3 + h3, .pancakes .ready-in .art-of-cakes .cake-info h3 + h3 {
+      color: #a47d5e;
+      text-transform: uppercase;
+      font-weight: 800; }
+    .art-of-cakes .cake-info q {
+      font-family: 'Scriptina';
+      color: #a47d5e;
+      font-size: 2em;
+      max-width: 9.5em;
+      text-align: center;
+      line-height: 1.3; }
+    .art-of-cakes .cake-info .chef-row {
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 25px 0; }
+      @media all and (max-width: 925px) {
+        .art-of-cakes .cake-info .chef-row {
+          -ms-flex-flow: column wrap;
+          flex-flow: column wrap; } }
+      .art-of-cakes .cake-info .chef-row p, .art-of-cakes .cake-info .chef-row .pancakes .ready-in h3, .pancakes .ready-in .art-of-cakes .cake-info .chef-row h3 {
+        border-top: 1px solid rgba(70, 71, 70, 0.8);
+        border-bottom: 1px solid rgba(70, 71, 70, 0.8);
+        padding: 15px 0; }
+      .art-of-cakes .cake-info .chef-row img {
+        margin: 0 25px; }
+
+.pancakes {
+  background: url("../../images/pancakes-bg.jpg") no-repeat center top/cover;
+  padding: 100px 0; }
+  @media all and (max-width: 925px) {
+    .pancakes .pancake-wrapper {
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+      text-align: center; }
+      .pancakes .pancake-wrapper .ready-in {
+        display: none; } }
+  .pancakes .pancake-photo {
+    -ms-flex: 1;
+    flex: 1; }
+    .pancakes .pancake-photo img {
+      width: 100%; }
+  .pancakes .pancake-info {
+    -ms-flex: 1;
+    flex: 1;
+    background: url(../../images/windmill-bg.png) right bottom no-repeat/50%, #f2f2f2;
+    position: relative;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-left: 25px; }
+    .pancakes .pancake-info h3 + p, .pancakes .pancake-info .ready-in h3 + h3, .pancakes .ready-in .pancake-info h3 + h3 {
+      text-transform: uppercase;
+      color: #a47d5e;
+      font-weight: 800; }
+    .pancakes .pancake-info .pancakes-row img {
+      -ms-flex-item-align: center;
+      align-self: center;
+      display: inline-block;
+      margin: 0 15px; }
+      @media all and (max-width: 925px) {
+        .pancakes .pancake-info .pancakes-row img {
+          display: none; } }
+  .pancakes .ready-in {
+    background: url(../../images/field.png) center center no-repeat/cover, #f2f2f2;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -2em;
+    right: -2em;
+    box-shadow: 3px 15px 50px rgba(0, 0, 0, 0.5);
+    text-align: center; }
+    .pancakes .ready-in p, .pancakes .ready-in h3 {
+      text-transform: uppercase;
+      color: #a47d5e;
+      font-weight: 700; }
+    .pancakes .ready-in h3 {
+      font-size: 3.5em;
+      line-height: 1; }
+      .pancakes .ready-in h3:after {
+        content: "mins";
+        font-size: .2em;
+        display: block;
+        padding: 5px 0; }
+
+.breakfast {
+  background: url("../../images/breakfast-bg.jpg") no-repeat center top/cover;
+  padding: 55px 0; }
+  @media all and (max-width: 925px) {
+    .breakfast .breakfast-menu {
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center; } }
+  .breakfast h1 {
+    color: #f2f2f2; }
+    .breakfast h1 + p, .breakfast .pancakes .ready-in h1 + h3, .pancakes .ready-in .breakfast h1 + h3 {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: 900;
+      color: #dfc691; }
+  .breakfast .menu-item h3 {
+    color: #f2f2f2; }
+  .breakfast .menu-item p, .breakfast .menu-item .pancakes .ready-in h3, .pancakes .ready-in .breakfast .menu-item h3 {
+    color: #fff;
+    line-height: 1; }
+    .breakfast .menu-item p + h3, .breakfast .menu-item .pancakes .ready-in h3 + h3, .pancakes .ready-in .breakfast .menu-item h3 + h3 {
+      color: #dfc691; }
+  .breakfast .container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .breakfast .container .flair-escape {
+      background: url(../../images/barley-vector.png) right bottom no-repeat/50%, #f2f2f2;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      max-width: 500px;
+      text-align: center; }
+      @media all and (max-width: 925px) {
+        .breakfast .container .flair-escape {
+          display: none; } }
+
+.sandwich {
+  padding: 55px 0;
+  background: url(../../images/village-bg.png) center top no-repeat/25%, #f2f2f2;
+  text-align: center; }
+  .sandwich .container h3:first-child {
+    color: #464746; }
+    .sandwich .container h3:first-child + p, .sandwich .container .pancakes .ready-in h3:first-child + h3, .pancakes .ready-in .sandwich .container h3:first-child + h3 {
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #a47d5e; }
+  .sandwich .sandwich-details {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .sandwich .sandwich-details .ingredient p, .sandwich .sandwich-details .ingredient .pancakes .ready-in h3, .pancakes .ready-in .sandwich .sandwich-details .ingredient h3 {
+      padding: 0;
+      margin: 0; }
+      .sandwich .sandwich-details .ingredient p:nth-child(2), .sandwich .sandwich-details .ingredient .pancakes .ready-in h3:nth-child(2), .pancakes .ready-in .sandwich .sandwich-details .ingredient h3:nth-child(2) {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #a47d5e;
+        font-family: 'Playfair Display'; }
+    .sandwich .sandwich-details .sandwich-stats {
+      width: 700px;
+      background: url("../../images/sandwich.png") no-repeat center top/cover;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      transition: 800ms all ease-in-out;
+      transform: scale(0.2); }
+      .sandwich .sandwich-details .sandwich-stats .stats {
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        background: rgba(242, 242, 242, 0.8);
+        padding: 15px 50px;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+
+footer {
+  background: #f2f2f2;
+  border-top: 1px solid rgba(70, 71, 70, 0.5);
+  padding: 25px 0; }
+  footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #464746; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    @media all and (max-width: 670px) {
+      footer ul {
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center; } }
+
+.nav-toggle {
+  transform: translateY(0); }

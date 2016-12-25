@@ -1,0 +1,511 @@
+//Dữ liệu css
+@red: #842210;
+@color: #ffffff;
+@kembo: #f6eddb;
+@xam : #7b7874;
+.playfair () {
+  font-family: 'Playfair Display',serif;
+  font-size: 80px;
+}
+.dobong(){
+  border-radius: 18px 18px 18px 18px;
+  -moz-border-radius: 18px 18px 18px 18px;
+  -webkit-border-radius: 18px 18px 18px 18px;
+  border: 3px dotted #000000;
+  -webkit-box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+  box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+}
+.chudai (){
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+.viethoa(){text-transform: uppercase}
+
+//dinh dang chu
+h1{
+  font-size: 48pt;
+  font-weight: 900;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+}
+h4{
+  font-size: 14pt;
+  text-transform: uppercase;
+  .chudai;
+  color: #a47d5e;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+}
+p{
+  font-size: 14pt;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+}
+h3{
+  font-size: 24pt;
+  font-weight: 600;
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  color: #f0ad4e;
+}
+.cangiua () {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+
+}
+html{
+  font-size: 14pt;
+}
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('/Scriptina_Pro-webfont.eot');
+  src: url('Scriptina_Pro-webfont.eot?#iefix') format('embedded-opentype'),
+  url('Scriptina_Pro-webfont.woff') format('woff'),
+  url('Scriptina_Pro-webfont.ttf') format('truetype'),
+  url('Scriptina_Pro-webfont.svg#scriptina_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+//<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px >>>>>>>>>>>>>>>>>>>>>>//<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px >>>>>>>>>>>>>>>>>>>>>>//<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px >>>>>>>>>>>>>>>>>>>>>>
+//<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px >>>>>>>>>>>>>>>>>>>>>>
+//<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px >>>>>>>>>>>>>>>>>>>>>>
+@media screen and (min-width: 1141px){
+/*Xử lý menu*/
+.navbar-brand {
+  font-family: 'MyWebFont', Arial, sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: @xam;
+  opacity: 0.5;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+  font-family: 'Alegreya', serif;
+  font-size: 21px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.navbar-inverse {
+  border-color: transparent;
+}
+//slide css
+  .slidechinh{
+    display: none;
+  }
+.slide {
+
+  position: relative;
+  .slide-hientai{
+    .text-info {
+      .cangiua;
+      width: 50%;
+      height: 50%;
+      border-radius:50%;
+      z-index: 2;
+
+      h2{
+
+        text-align: center;
+        color: @color;
+        .playfair
+      }
+      p{
+        .chudai;
+        text-align: center;
+        color: @color;
+
+      }
+      button{
+        display: block;
+        background-color: #7b7874;
+        opacity: 0.5;
+        text-align: center;
+        margin: 50px auto;
+      }
+
+    }
+    .dashed {
+      .cangiua;
+      background-color: @xam;
+      width: 20%;
+      opacity: 0.4;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 219px;
+      z-index: 1;
+
+    }
+  }
+}
+.layer1 {
+
+
+  background-image: url(../images/da.png);
+  font-family: 'Alegreya', serif;
+  text-align: center;
+  h1{
+    font-size: 48pt;
+    font-weight: 900;
+  }
+  h4{
+    font-size: 14pt;
+    text-transform: uppercase;
+    .chudai;
+    color: #a47d5e;
+  }
+  p{
+    font-size: 14pt;
+  }
+  h3{
+    font-size: 24pt;
+    font-weight: 600;
+  }
+  .split{
+    overflow: hidden;
+    max-width: 100%;
+    h4{
+      vertical-align: middle;
+      text-align: center;
+      border-bottom: 1px solid @xam;
+      border-top: 1px solid @xam;
+    }
+    img {
+      border-radius: 90px;
+      -webkit-box-shadow: 4px 12px 21px 0 rgba(140, 140, 140, 0.35);
+      -moz-box-shadow:    4px 12px 21px 0 rgba(140, 140, 140, 0.35);
+      box-shadow:         4px 12px 21px 0 rgba(140, 140, 140, 0.35);
+    }
+  }
+  .right-img{
+    margin-top: 120px;
+  }
+
+}
+.layer2 {
+  height: 760px;
+  background-image: url(../images/da2_02.png);
+  position: relative;
+  .moreinfo{
+    position: absolute;
+    z-index: 6;
+    top: -41px;
+    right: -40px;
+    width: 14%;
+    background-image: url(../images/field.png);
+    background-color: #5d4037;
+    text-align: center;
+  }
+  .sanpham {
+      width: 956px;
+      height: 513px;
+      z-index: 3;
+      .cangiua;
+      -webkit-box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+      -moz-box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+      box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+      .anhsp {
+        position: relative;
+
+        .newClass {
+          position: absolute;
+          top: 12%;
+          right: -3%;
+          z-index: 3;
+          width: 54%;
+          h2 {
+
+            text-align: left;
+            color: #f6eddb;
+            font-family: 'Playfair Display', serif;
+            font-size: 40pt;
+          }
+          h4 {
+            text-align: left;
+            color: #f6eddb;
+            .viethoa
+
+          }
+          p {
+            font-family: 'Alegreya', serif;
+            text-align: left;
+            color: #f6eddb;
+            font-size: 1em;
+            background-color: #2b2b2b;
+            opacity: 0.5;
+          }
+        }
+
+        .infosp {
+          position: absolute;
+          top: 12%;
+          right: -3%;
+          z-index: 3;
+          width: 54%;
+          //test đổi class cho h2
+          h2 {
+
+            text-align: left;
+            color: #56534c;
+            font-family: 'Playfair Display',serif;
+            font-size: 40pt;
+          }
+          h4{
+            text-align: left;
+            color: #a47d5e;
+            .viethoa
+
+          }
+          p{
+            font-family: 'Alegreya', serif;
+            text-align: left;
+          }
+          //class mới
+
+
+          button{
+            display: block;
+            background-color: #7b7874;
+            opacity: 0.5;
+            text-align: center;
+            margin: 50px auto;
+          }
+
+        }
+        #effect{
+          background-image: url(../images/windmill-bg.png);
+          background-position: right bottom;
+          background-repeat: no-repeat;
+          width: 60%; height: 100%; padding: 0.4em; background: #fff; position: absolute;top: 0;right: 0;z-index: 2;
+          .vector{
+
+          }
+        }
+      }
+      .moreinfo{
+        -webkit-box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+        -moz-box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+        box-shadow: -9px 18px 56px -1px rgba(0,0,0,0.69);
+      }
+    }
+}
+#breakfast{
+    position: relative;
+    background: url("../images/img.jpg") no-repeat center top/cover;
+    padding: 55px 0;
+    height: 760px;
+  .menu1{
+    position: absolute;
+    left: 77%;
+    top: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #f3f1e9;
+    width: 28%;
+    height: 80%;
+    z-index: 4;
+    .dobong;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    h2{
+      font-size: 44pt;
+      font-weight: 800;
+    }
+    p{
+      .chudai;
+      font-size: 15pt;
+    }
+  }
+  .menu2{
+    position: absolute;
+    left: 78%;
+    top: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #f3f1e9;
+    width: 28%;
+    height: 76%;
+    z-index: 3;
+    .dobong;
+
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    h2{
+      font-size: 44pt;
+      font-weight: 800;
+    }
+    p{
+      .chudai;
+      font-size: 15pt;
+    }
+  }
+  .menu3{
+    position: absolute;
+    left: 79%;
+    top: 51%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #f3f1e9;
+    width: 28%;
+    height: 73%;
+    z-index: 2;
+    .dobong;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    h2{
+      font-size: 44pt;
+      font-weight: 800;
+    }
+    p{
+      .chudai;
+      font-size: 15pt;
+    }
+  }
+
+  .breakfast-menu{
+    color: @kembo;
+
+  }
+
+}
+.sandwich{
+  .sandwich-stats{
+    position: relative;
+    .stats{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: white;
+      opacity: 0.7;
+      border: 1px solid;
+      width: 15%;
+    .stat{
+      border-bottom: 1px solid;
+    }
+    }
+  }
+
+}
+
+
+}  /* end the meida tại kích thước 1600px*/
+                      //<<<<<<<<<<<<<<<<<<<<<  780 --- 1600px  >>>>>>>>>>>>>>>>>>>>>>
+@media screen and (max-width: 1141px) {
+  .infosp {
+    text-align: center;
+
+  }
+  .carousel {
+    height: 100%;
+  }
+  .side-nav{
+    a{
+      font-size: 15pt;
+      font-family: "Playfair Display",sans-serif;
+    }
+  }
+  nav {
+    background-color: transparent;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    a {
+      color: black;
+    }
+  }
+}
+@media only screen and (min-width: 993px) {
+    nav a.button-collapse {
+      display: block;
+      i{
+        font-size: 33pt;
+      }
+  }
+}
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 170px;
+  }
+  ul.nav.navbar-nav{
+    margin-left: 50px;
+  }
+}
+
+footer {
+  position: relative;
+  background: #f2f2f2;
+  border-top: 1px solid rgba(70, 71, 70, 0.5);
+  padding: 25px 0;
+  .logo{
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+footer ul {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  list-style: none;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  justify-content: space-around;
+  -webkit-box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+  box-shadow: 14px 18px 24px -12px rgba(0,0,0,0.75);
+  li{
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #464746;
+      font-size: 18px;
+    }
+    float: left;
+  }
+  li:after{
+    padding-left:5px ;
+    padding-right:5px ;
+    content: " - ";
+  }
+  li:last-child:after{
+    content: "";
+  }
+}
+blockquote{
+  font-family: 'MyWebFont', serif;
+  font-size: 24pt;
+  color: #a47d5e;
+  text-align: center;
+}
